@@ -49,28 +49,30 @@ are all customers who have purchased something from WWW in the past 18 months
 (after 18 months with no purchase, a person is eliminated from the active
 database). 
 
+Your job is to segment the database and find the relevant clusters of customers. To do this, we suggest you do 2 different segmentations, one based on engagement (or value of the customer) and a second one based on the buying behavior (or what are the types of wines they tend to buy). In the end you should provide a concatenated/joint view of the segmentation results, but also have each customer assigned to a specific cluster of engagement and a specific cluster of buying behavior. The reason for this is that we would like to understand the value of each customer but also to know what are the wines they will be more interested in buying.
+
 ## Metadata
 
-| Name     | Values         | Statistics         | Meaning                                                      |
-|----------|----------------|--------------------|--------------------------------------------------------------|
-| CUSTID   | 1001-10000     | customer ID number |                                                              |
-| DAYSWUS  | 550-1250       | mean=899           | number of days as a customer                                 |
-| AGE      | 18-78          | mean=48            | customer’s age or imputed age                                |
-| EDUC     | 12-20          | mean=16.7          | years of education (may be imputed)                          |
-| INCOME   | $10K-$140K     | mean=$70K          | household income (may be imputed)                            |
-| FREQ     | 1-56           | mean=15            | number of purchases in past 18 mo.                           |
-| RECENCY  | 0-550          | mean=62            | number of days since last purchase                           |
-| MONETARY | $6-$3052       | mean=$623          | total sales to this person in 18 mo.                         |
-| LTV      | -$178 to $1791 | mean=$209          | Lifetime value of the customer                               |
-| PERDEAL  | 0-100%         | mean=32%           | % purchases bought on discount                               |
-| DRYRED   | 0-100%         | mean=50%           | % of wines that were dry red wines                           |
-| SWEETRED | 0-100%         | mean=7%            | % sweet or semi-dry reds                                     |
-| DRYWH    | 0-100%         | mean=29%           | % dry white wines                                            |
-| SWEETWH  | 0-100%         | mean=7%            | % sweet or semi-dry white wines                              |
-| DESSERT  | 0-100%         | mean=7%            | % dessert wines (port, sherry, etc.)                         |
-| EXOTIC   | 0-100%         | mean=17%           | % very unusual wines                                         |
-| WEBPURCH | 0-100%         | mean=42            | % of purchases made on website                               |
-| WEBVISIT | 0-10           | mean=5             | average # visits to website per month                        |
+| Name     | Values         | Statistics         | Meaning                                  |
+|----------|----------------|--------------------|------------------------------------------|
+| CUSTID   | 1001-10000     | customer ID number |                                          |
+| DAYSWUS  | 550-1250       | mean=899           | number of days as a customer             |
+| AGE      | 18-78          | mean=48            | customer’s age or imputed age            |
+| EDUC     | 12-20          | mean=16.7          | years of education (may be imputed)      |
+| INCOME   | $10K-$140K     | mean=$70K          | household income (may be imputed)        |
+| FREQ     | 1-56           | mean=15            | number of purchases in past 18 mo.       |
+| RECENCY  | 0-550          | mean=62            | number of days since last purchase       |
+| MONETARY | $6-$3052       | mean=$623          | total sales to this person in 18 mo.     |
+| LTV      | -$178 to $1791 | mean=$209          | Lifetime value of the customer           |
+| PERDEAL  | 0-100%         | mean=32%           | % purchases bought on discount           |
+| DRYRED   | 0-100%         | mean=50%           | % of wines that were dry red wines       |
+| SWEETRED | 0-100%         | mean=7%            | % sweet or semi-dry reds                 |
+| DRYWH    | 0-100%         | mean=29%           | % dry white wines                        |
+| SWEETWH  | 0-100%         | mean=7%            | % sweet or semi-dry white wines          |
+| DESSERT  | 0-100%         | mean=7%            | % dessert wines (port, sherry, etc.)     |
+| EXOTIC   | 0-100%         | mean=17%           | % very unusual wines                     |
+| WEBPURCH | 0-100%         | mean=42            | % of purchases made on website           |
+| WEBVISIT | 0-10           | mean=5             | average # visits to website per month    |
 
 ## Additional remarks
 
@@ -86,8 +88,6 @@ pandas data frame) any irrelevant rows/columns you may find.
 
 1. Explore the data and identify the variables that should be used to segment customers.
 2. Identify customer segments
-    * Justify the number of clusters you chose (taking in consideration the business use).
-    * Use dimensionality reduction techniques to speed-up model development
-        (don't forget you should be able to interpret and explain your results
-        to non-technical managers).
-3. Suggest business applications for the findings.
+3. Justify the number of clusters you chose (taking in consideration the business use).
+4. Explain the clusters found.
+5. Suggest business applications for the findings.
