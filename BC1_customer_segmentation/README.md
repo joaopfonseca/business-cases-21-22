@@ -2,7 +2,7 @@
 
 **Problem type:** Customer Segmentation
 
-**Submission date:** 01-March-2022 | 11.59pm
+**Submission date:** 02-March-2022 | 2pm
 
 ## General Context
 
