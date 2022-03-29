@@ -1,4 +1,4 @@
-# BC4: Gift-a-Lot recommender system
+# BC3: Gift-a-Lot recommender system
 
 **Problem type:** Recommender System
 
