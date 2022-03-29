@@ -4,7 +4,24 @@
 
 **Submission date:** 18-04-2022 | 11:59 pm
 
-## General Context 
+## General Context
+
+### Market Basket Analysis
+
+Nowadays, understanding the purchasing patterns/behaviors of consumers is a
+key task for any retail company. Identifying the relationships between the
+different types of products, e.g, complementary, substitute, inferior and
+convenience goods, provides the company a wholistic view about its customers
+and the portfolio of products it has to offer.
+
+Specifically, market basket analysis is a data mining technique that is used
+to inform a retailer about products that are frequently bought together, which
+of these are seen as substitutes to one another and customer segmentation. The
+retailer uses this information to then optimize the store's layout, develop
+cross-promotional programs and develop different marketing strategies for its
+customers.
+
+### Recommender Systems
 
 Recommender systems have become a very important part of the retail industries
 by providing decision-making support to its customers. Several studies such as
@@ -55,9 +72,14 @@ of customers from all parts of the United Kingdom and the world, and has
 accumulated a huge amount of data about many customers. The company also uses
 Amazon.co.uk to market and sell its products. 
 
-With this new data the company expects to build a recommender system that is
-able to facilitate user choices by recommending items the user likes and
-improve user experience when making purchases on its website. A particular
+Jane, Gift-a-Lot's newly appointed Chief data officer, has a small team of
+in-house data scientists, with little time to dedicate to new projects.
+Consequently, she decided to hire a team of external consultants (you) to
+address some of the questions they've been struggling to address.
+
+With the data they provided the company expects to build a recommender system
+that is able to facilitate user choices by recommending items the user likes
+and improve user experience when making purchases on its website. A particular
 challenge is the cold start problem - how can we suggest relevant items to new
 customers?
 
@@ -86,9 +108,12 @@ Gift-a-Lot customers are wholesalers.
 ## Expected Outcomes
 
 1. Explore the data and build models to answer the problems:
-    1. Recommender system: the website homepage offers a wide range of
+    1. Market Basket Analysis: Which types of products can be seen as
+       substitutes and complementary?  What are the main types of consumer
+       behavior in the business?
+    2. Recommender system: the website homepage offers a wide range of
        products the user might be interested in
-    2. Cold start: offer relevant products to new customers
+    3. Cold start: offer relevant products to new customers
 2. Implement adequate evaluation strategies and select an appropriate quality
    measure
 3. In the deployment phase, elaborate on the challenges and recommendations in
