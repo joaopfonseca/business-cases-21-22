@@ -49,7 +49,7 @@ these models and bring them into production.
 Investments4Some is aware of the lack of sophistication of the average
 investor, and is well aware of the potential of Machine Learning methods to
 anticipate market trends and increase the expected returns of their
-invesments. They know that with a good enough forecasting model, they could
+investments. They know that with a good enough forecasting model, they could
 more accurately predict market prices and anticipate trends. As such, Warner
 Buffer and Gil Bates, partners of Investments4Some, have asked you to build
 them a forecasting model in order to predict the daily value of
@@ -60,7 +60,7 @@ daily prices of 10 cryptocurrencies.
 
 All cryptocurrencies found in the dataset are valued in terms of USD. For
 example, a value of 400 USD means a unit of a cryptocurrency is worth that much
-in american dollars. The symbols presented below are shown as represented in
+in American dollars. The symbols presented below are shown as represented in
 Yahoo! Finance. Cryptocurrencies present in the dataset:
 
 - ADA-USD: Cardano
